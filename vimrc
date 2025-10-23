@@ -106,5 +106,14 @@ nnoremap <Leader>rp :cprevious<CR>
 nnoremap <Leader>rb <C-t>
 
 
-colorscheme nord
 
+" Ensure 256 colors are enabled
+set t_Co=256
+
+" Tell Neovim to use the dark color palette
+set background=dark
+
+" Enable True Color
+"set termguicolors
+
+"colorscheme nord
