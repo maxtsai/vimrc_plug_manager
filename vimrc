@@ -7,9 +7,7 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'scrooloose/nerdtree'
 Plug 'preservim/tagbar'
 Plug 'jlanzarotta/bufexplorer'
-Plug 'arcticicestudio/nord-vim'
-Plug 'sainnhe/sonokai'
-Plug 'lifepillar/vim-solarized8'
+Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 
@@ -48,14 +46,14 @@ set hidden             " Hide buffers when they are abandoned
 "set autochdir
 "set noexpandtab
 "" speed up when syntax on
-"set ttyfast
-"#set lazyredraw
+set ttyfast
+set lazyredraw
 
 map ,r :History<CR>
 map ,w :set wrap!<CR>
 map ,n :set nu!<CR>
 map ,s :set cursorline!<CR>:set cursorcolumn!<CR>
-map <F5> :NERDTree <CR>
+"map <F5> :NERDTree <CR>
 map <F8> <ESC>:TagbarToggle<ENTER>
 map <F9> :BufExplorer <CR>
 map <F12> :qa <CR>
@@ -109,11 +107,8 @@ nnoremap <Leader>rb <C-t>
 
 " Ensure 256 colors are enabled
 set t_Co=256
-
-" Tell Neovim to use the dark color palette
+"if has('termguicolors')
+"    set termguicolors
+"endif
 set background=dark
-
-" Enable True Color
-"set termguicolors
-
-"colorscheme nord
+colorscheme PaperColor
