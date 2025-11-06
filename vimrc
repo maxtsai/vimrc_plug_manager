@@ -107,8 +107,8 @@ nnoremap <Leader>rb <C-t>
 
 " Ensure 256 colors are enabled
 set t_Co=256
-"if has('termguicolors')
-"    set termguicolors
-"endif
+if has('termguicolors')
+    set termguicolors
+endif
 set background=dark
 colorscheme PaperColor
