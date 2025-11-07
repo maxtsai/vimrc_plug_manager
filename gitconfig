@@ -1,0 +1,16 @@
+[user]
+	email = hctsai@axiado.com
+	name = Max Tsai
+	signingkey = 13EAF342256E4344345843939B743D63184EE95A
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[core]
+	editor = vi
+	whitespace = blank-at-eol,blank-at-eof,space-before-tab,tabwidth=8
+
+[alias]
+	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cgreen%an%C(bold red)%d %Creset%s%n' --date=short --abbrev-commit --name-status
+
+
