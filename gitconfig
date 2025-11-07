@@ -12,5 +12,4 @@
 
 [alias]
 	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cgreen%an%C(bold red)%d %Creset%s%n' --date=short --abbrev-commit --name-status
-
-
+	l = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cgreen%an%C(bold red)%d %Creset%s%n' --date=short --abbrev-commit --name-status --since='2 months ago'
