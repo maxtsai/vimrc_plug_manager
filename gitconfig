@@ -13,3 +13,11 @@
 [alias]
 	tree = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cgreen%an%C(bold red)%d %Creset%s%n' --date=short --abbrev-commit --name-status
 	l = log --graph --decorate --pretty=format:'%C(yellow)%h %Cred%ad %Cgreen%an%C(bold red)%d %Creset%s%n' --date=short --abbrev-commit --name-status --since='2 months ago'
+	pathstat = !sh -c 'git log --pretty=format:\"%h\" -- \"$1\" | xargs git show --oneline --decorate --pretty=format:\"%C(yellow)%h %Cred%ad %Cgreen%an%C(bold red)%d %Creset%s%n\" --date=short --abbrev-commit --name-status' -
+
+
+
+[maintenance]
+	repo = /data/localdrive/hctsai/kernel
+	repo = /data/localdrive/hctsai/kernel_nvid
+	repo = /data/localdrive/hctsai/openbmc_18
